@@ -65,8 +65,8 @@ class WalkerNavMenu extends BaseWalkerNavMenu
             $classes[] = 'active';
         }
 
-        $class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
-        $class_names = $class_names ? ' class="'.esc_attr($class_names).'"' : '';
+        $class_names_str = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args, $depth));
+        $class_names = $class_names_str ? ' class="'.esc_attr($class_names_str).'"' : '';
 
         $id = apply_filters('nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth);
         $id = $id ? ' id="'.esc_attr($id).'"' : '';
@@ -91,7 +91,7 @@ class WalkerNavMenu extends BaseWalkerNavMenu
             $atts['aria-expanded']  = 'false';
         } else {
             if (1 === $depth) {
-                $atts['class'] = 'dropdown-item';
+                $atts['class'] = $class_names_str . ' dropdown-item';
             }
             $atts['href'] = !empty($item->url) ? $item->url : '';
         }
