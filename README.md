@@ -14,7 +14,7 @@ WordPress Nav Walkers to implement Bootstrap navbars.
 Easy installation with [Composer](https://getcomposer.org/).
 
 ````
-composer require indigotree/wp-bootstrap-nav-walker
+composer require cyberpearuk/wp-bootstrap-nav-walker
 ````
 
 ## Usage (Bootstrap 3)
