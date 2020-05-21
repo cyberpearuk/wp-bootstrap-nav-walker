@@ -58,3 +58,7 @@ wp_nav_menu([
 ## License
 
 The MIT [License](LICENSE.md) (MIT).
+
+## Maintainer
+
+This repository is a fork of indigotree/wp-bootstrap-nav-walker and is maintained by [Black Pear Digital](https://www.blackpeardigital.co.uk).
